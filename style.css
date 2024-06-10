@@ -74,6 +74,8 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    background-color: #000000;
+    color: #fff;
 }
 
 .main-nosotros-container {
@@ -95,6 +97,7 @@
 
 video {
     margin-top: 5rem;
+    border-radius: 15px;
 }
 
 .main-nosotros-h2 {
@@ -107,4 +110,106 @@ video {
     text-align: justify;
 }
 
+/* Seccion de productos */
 
+#productos {
+    background-color: #464646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Evita que el borde inferior se extienda más allá de la pantalla */
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ocupa todo el espacio del contenedor */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+}
+
+.imagen img {
+    border: 3px solid #000;
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin distorsionarla */
+}
+
+.imagen img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* Seccion del pie de página */
+.footer {
+    background-color: #000;
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-p {
+    font-size: 2rem;
+}
+
+.footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.footer-container-img {
+    width: 15%;
+    height: 100%;
+}
+
+.footer-container-ul {
+    width: 85%;
+    height: 100%;
+}
+
+.footer-img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12rem;
+    font-size: 2.4rem;
+}
+
+.fa-brands {
+    margin: 0 1rem;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.fa-instagram:hover {
+    color: #bd2b63;
+    cursor: pointer;
+}
+
+.fa-square-facebook:hover {
+    color: rgb(13, 13, 148);
+    cursor: pointer;
+}
