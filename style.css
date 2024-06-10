@@ -1,12 +1,13 @@
+/* Estilos globales */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
+/* Estilos de encabezado principal */
 .header {
     background: linear-gradient(to bottom, #000000 20%, #292929 100%);
     width: 100%;
@@ -15,6 +16,7 @@
     justify-content: space-between;
     padding: 0 50px;
     align-items: center;
+    position: fixed;
 }
 
 .header-img {
@@ -41,6 +43,68 @@
     font-weight: bold;
 }
 
+/* Seccion de Inicio */
+.main-inicio {
+    background-color: #464646;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
 
+.main-inicio-container {
+    width: 50%;
+    height: 50%;
+}
+
+.main-inicio-h1 {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.main-inicio-p {
+    text-align: justify;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+/* Seccion de acerca de nosotros */
+.main-nosotros {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.main-nosotros-container {
+    width: 50%;
+    height: 100vh;
+}
+
+.main-nosotros-container__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-nosotros-container__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    margin-top: 5rem;
+}
+
+.main-nosotros-h2 {
+    text-align: center;
+}
+
+.main-nosotros-p {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+}
 
 
