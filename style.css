@@ -170,7 +170,7 @@ span {
 
 form {
     background-color: #fff;
-    width: 25%;
+    min-width: 30%;
     margin: 0 auto;
     padding: 1rem 3rem;
     display: flex;
@@ -348,6 +348,13 @@ label {
 
     .imagen img {
      width: 180px;
+    }
+}
+
+/* Responsive a formulario */
+@media (max-width: 1100px) {
+    form {
+        min-width: 40%;
     }
 }
 
